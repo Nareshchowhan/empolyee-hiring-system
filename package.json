@@ -1,7 +1,7 @@
 {
   "name": "relevel-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "clone the project in your local machine\r go into the project directory and use npm i\r Create a new .env file and configure a variable PORT=XXXX\r To create the db - npx sequelize init , then change username and password in the config.config.json\r then npx sequelize db:create\r Seed roles: npx sequelize db:seed:all\r If you wish to later remove the seed: npx sequelize db:seed:undo:all",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,11 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.21.2",
     "sequelize-cli": "^6.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nareshchowhan/empolyee-hiring-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nareshchowhan/empolyee-hiring-system/issues"
+  },
+  "homepage": "https://github.com/Nareshchowhan/empolyee-hiring-system#readme"
 }
